@@ -14,7 +14,7 @@ const TaskCard = memo(function TaskCard({ task, onToggle, onEdit, onDelete }) {
 
   return (
     <li
-      className={`card flex flex-col gap-3 rounded-xl bg-white p-4 shadow-sm ring-1 sm:flex-row sm:items-center ${
+      className={`card flex flex-col gap-3 rounded-xl border-white p-4 shadow-sm ring-1 sm:flex-row sm:items-center ${
         overdue ? "ring-red-300" : "ring-slate-200"
       }`}
     >
