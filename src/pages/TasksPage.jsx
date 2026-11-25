@@ -27,7 +27,6 @@ export default function TasksPage({ tasks, onAdd, onUpdate, onDelete, onToggle }
   const pendingCount = tasks.filter((t) => !t.completed).length;
   useDocumentTitle(`Tasks (${pendingCount} pending) | StudyFlow`);
 
-  // Move keyboard focus to the title field whenever the form opens (add or edit).
   useEffect(() => {
     if (showForm || editing) titleRef.current?.focus();
   }, [showForm, editing]);
@@ -60,7 +59,6 @@ export default function TasksPage({ tasks, onAdd, onUpdate, onDelete, onToggle }
     setEditing(null);
     setNotice("Task updated.");
   };
-  // useCallback keeps this function identical between renders so memo(TaskCard) can skip work.
   const handleDelete = useCallback(
     (id) => {
       if (window.confirm("Delete this task?")) {

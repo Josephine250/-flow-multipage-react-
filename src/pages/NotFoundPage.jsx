@@ -1,5 +1,5 @@
-import EmptyState from "../components/EmptyState";
 import { ButtonLink } from "../components/Button";
+import EmptyState from "../components/EmptyState";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 export default function NotFoundPage() {

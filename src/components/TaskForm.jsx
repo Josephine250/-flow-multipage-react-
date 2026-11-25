@@ -6,7 +6,6 @@ import { categories } from "../data/categories";
 
 const empty = { title: "", category: categories[0], dueDate: "", priority: "medium" };
 
-// Controlled form used for BOTH adding and editing. `titleRef` lets the parent focus the title input.
 export default function TaskForm({ initialTask, onSubmit, onCancel, titleRef }) {
   const [form, setForm] = useState(
     initialTask
@@ -21,7 +20,7 @@ export default function TaskForm({ initialTask, onSubmit, onCancel, titleRef }) 
   const [error, setError] = useState("");
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value }); // immutable object update
+    setForm({ ...form, [e.target.name]: e.target.value });
     if (e.target.name === "title") setError("");
   };
 

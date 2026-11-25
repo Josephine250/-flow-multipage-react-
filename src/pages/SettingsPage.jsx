@@ -8,7 +8,6 @@ import { defaultSettings } from "../data/defaultSettings";
 export default function SettingsPage({ settings, onSave }) {
   useDocumentTitle("Settings | StudyFlow");
 
-  // Draft object state: changes only become real settings after validation + Save.
   const [draft, setDraft] = useState(settings);
   const [error, setError] = useState("");
   const [saved, setSaved] = useState(false);

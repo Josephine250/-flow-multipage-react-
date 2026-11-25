@@ -7,7 +7,7 @@ export default function EmptyState({ icon = "inbox", title, message, children })
         <Icon name={icon} className="h-6 w-6" />
       </span>
       <h3 className="text-lg font-semibold text-slate-900">{title}</h3>
-      <p className="mx-auto mt-1 max-w-sm text-sm text-slate-600">{message}</p>
+      <p className="mx-auto mt-1 max-w-sm text-sm text-slate-500">{message}</p>
       {children && <div className="mt-4">{children}</div>}
     </div>
   );

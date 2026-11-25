@@ -11,7 +11,6 @@ const priorityTone = { high: "red", medium: "amber", low: "green" };
 export default function DashboardPage({ tasks, name, studyMinutes }) {
   useDocumentTitle("Dashboard | StudyFlow");
 
-  // Everything below is DERIVED from `tasks` during render: no duplicate state, no Effect.
   const total = tasks.length;
   const completed = tasks.filter((t) => t.completed).length;
   const pending = total - completed;

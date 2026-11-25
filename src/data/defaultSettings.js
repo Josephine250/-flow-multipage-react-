@@ -1,1 +1,2 @@
+// default timer 
 export const defaultSettings = { name: "", duration: 25, compact: false };

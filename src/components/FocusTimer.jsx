@@ -28,7 +28,7 @@ export default function FocusTimer({ mode, minutes }) {
     intervalRef.current = setInterval(() => {
       setSecondsLeft((s) => s - 1); // functional update: always uses the latest value
     }, 1000);
-    // Cleanup runs on pause, reset, finish, and when leaving /focus:
+    
     // the old interval is always cleared, so intervals never duplicate or leak.
     return () => clearInterval(intervalRef.current);
   }, [active]);

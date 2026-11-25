@@ -1,4 +1,3 @@
-// Local sample data only (no API). Each task: id, title, category, dueDate, priority, completed.
 export const initialTasks = [
   { id: 1, title: "Submit calculus problem set", category: "Assignments", dueDate: "2026-11-22", priority: "high", completed: false },
   { id: 2, title: "Revise for databases midterm exam", category: "Exams", dueDate: "2026-11-25", priority: "high", completed: false },

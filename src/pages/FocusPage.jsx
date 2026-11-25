@@ -33,8 +33,7 @@ export default function FocusPage({ studyMinutes }) {
           ))}
         </div>
 
-        {/* Changing `key` makes React unmount the old timer and mount a brand-new one,
-            so switching Study/Break resets all timer state automatically. */}
+            /*so switching Study/Break resets all timer state automatically. */
         <FocusTimer key={mode} mode={mode} minutes={minutes} />
       </SectionCard>
     </div>

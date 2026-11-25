@@ -8,7 +8,6 @@ const links = [
   { to: "/settings", label: "Settings", icon: "settings" },
 ];
 
-// Desktop: left sidebar. Mobile: fixed bottom navigation. Same component, same links.
 export default function Navbar({ pending = 0 }) {
   return (
     <aside className="bg-slate-900 text-white md:sticky md:top-0 md:h-screen md:w-64 md:shrink-0">

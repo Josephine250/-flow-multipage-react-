@@ -33,7 +33,6 @@ export default function Button({
   );
 }
 
-// Same look, but a router <Link> (navigation without a page reload).
 export function ButtonLink({ to, variant = "primary", size = "md", icon, className = "", children }) {
   return (
     <Link to={to} className={build(variant, size, className)}>

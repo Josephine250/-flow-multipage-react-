@@ -1,6 +1,5 @@
 const pad = (n) => String(n).padStart(2, "0");
 
-// Today as YYYY-MM-DD in the visitor's local time zone.
 export function todayISO() {
   const d = new Date();
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
@@ -15,7 +14,6 @@ export function formatDate(iso) {
   });
 }
 
-// Sort helper: earliest first, tasks without a date go last.
 export function compareDue(a, b) {
   if (!a.dueDate && !b.dueDate) return 0;
   if (!a.dueDate) return 1;

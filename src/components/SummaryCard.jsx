@@ -4,7 +4,7 @@ const tones = {
   teal: "bg-teal-100 text-teal-700",
   amber: "bg-amber-100 text-amber-700",
   green: "bg-emerald-100 text-emerald-700",
-  red: "bg-red-100 text-red-700",
+  red: "bg-red-100 text-red-600",
 };
 
 export default function SummaryCard({ label, value, icon, tone = "teal" }) {

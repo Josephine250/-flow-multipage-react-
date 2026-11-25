@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 
-// Like useState, but the value is read from / saved to localStorage.
 export function useLocalStorage(key, initialValue) {
   const [value, setValue] = useState(() => {
     try {
       const saved = localStorage.getItem(key);
       return saved !== null ? JSON.parse(saved) : initialValue;
     } catch {
-      return initialValue; // corrupted JSON or storage blocked
+      return initialValue;
     }
   });
 

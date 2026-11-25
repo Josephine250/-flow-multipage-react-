@@ -7,7 +7,6 @@ import { formatDate, isOverdue } from "../utils/dates";
 const priorityTone = { high: "red", medium: "amber", low: "green" };
 
 // memo: skips re-rendering when its props are unchanged (e.g. while typing in the search box,
-// because App passes stable callbacks via useCallback).
 const TaskCard = memo(function TaskCard({ task, onToggle, onEdit, onDelete }) {
   if (import.meta.env.DEV) console.log("render TaskCard", task.id);
   const overdue = isOverdue(task);

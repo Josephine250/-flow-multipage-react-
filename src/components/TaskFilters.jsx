@@ -3,7 +3,6 @@ import SelectField from "./SelectField";
 import Button from "./Button";
 import { categories } from "../data/categories";
 
-// Presentational: all state lives in TasksPage, this just shows controls and calls back.
 export default function TaskFilters({
   search, onSearchChange, searchRef,
   category, onCategoryChange,

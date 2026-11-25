@@ -20,7 +20,6 @@ const paths = {
   search: <><circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" /></>,
 };
 
-// Fallback shown if an unknown icon name is used (so the layout never breaks).
 const fallback = <circle cx="12" cy="12" r="9" />;
 
 export default function Icon({ name, className = "h-5 w-5" }) {

@@ -1,4 +1,3 @@
-// Reusable card shell. Uses `children` for its content.
 export default function SectionCard({ title, action, children, className = "" }) {
   return (
     <section className={`card rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200 ${className}`}>

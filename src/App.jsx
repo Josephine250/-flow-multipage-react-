@@ -11,7 +11,7 @@ import { initialTasks } from "./data/initialTasks";
 import { defaultSettings } from "./data/defaultSettings";
 
 export default function App() {
-  if (import.meta.env.DEV) console.log("render App"); // should NOT log on every timer tick
+  if (import.meta.env.DEV) console.log("render App");
 
   // STATE OWNERSHIP: App stays mounted while the route changes, so it owns the state that more than
   // one page needs (tasks -> Dashboard + Tasks + nav badge; settings -> Dashboard, Focus, layout).
