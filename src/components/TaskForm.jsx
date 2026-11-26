@@ -4,6 +4,7 @@ import TextInput from "./TextInput";
 import SelectField from "./SelectField";
 import { categories } from "../data/categories";
 
+
 const empty = { title: "", category: categories[0], dueDate: "", priority: "medium" };
 
 export default function TaskForm({ initialTask, onSubmit, onCancel, titleRef }) {
@@ -16,6 +17,7 @@ export default function TaskForm({ initialTask, onSubmit, onCancel, titleRef }) 
           priority: initialTask.priority,
         }
       : empty
+      
   );
   const [error, setError] = useState("");
 
