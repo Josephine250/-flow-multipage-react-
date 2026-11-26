@@ -8,7 +8,7 @@ import Button from "../components/Button";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { useToggle } from "../hooks/useToggle";
 import { useDebounce } from "../hooks/useDebounce";
-import { compareDue } from "../utils/dates";
+import { compareDue } from "../utils/Dates";
 
 export default function TasksPage({ tasks, onAdd, onUpdate, onDelete, onToggle }) {
   const [search, setSearch] = useState("");

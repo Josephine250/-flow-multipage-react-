@@ -4,7 +4,7 @@ import Badge from "../components/Badge";
 import { ButtonLink } from "../components/Button";
 import EmptyState from "../components/EmptyState";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
-import { compareDue, formatDate, isOverdue } from "../utils/dates";
+import { compareDue, formatDate, isOverdue } from "../utils/Dates";
 
 const priorityTone = { high: "red", medium: "amber", low: "green" };
 

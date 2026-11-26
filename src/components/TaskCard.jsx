@@ -2,7 +2,7 @@ import { memo } from "react";
 import Badge from "./Badge";
 import Button from "./Button";
 import Icon from "./Icon";
-import { formatDate, isOverdue } from "../utils/dates";
+import { formatDate, isOverdue } from "../utils/Dates";
 
 const priorityTone = { high: "red", medium: "amber", low: "green" };
 
